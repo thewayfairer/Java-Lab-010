@@ -54,9 +54,9 @@ public class Wolf implements Canine {
 }
 ```
 
-...what may look new to you is **implements Canine**. This is how a **Concreate Class** informs the Java code parser, that it is choosing to **Implement** the **methods** (i.e. the behaviors) declared without method bodies in the **interface**. As you can see, both the Dog class and the Wolf class **implements Canine** meaning both classes **MUST** override and give method bodies, to **ALL** the method signatures in the **Canine interface**.
+...what may look new to you is **implements Canine**. This is how a **Concrete Class** informs the Java code parser, that it is choosing to **Implement** the **methods** (i.e. the behaviors) declared without method bodies in the **interface**. As you can see, both the Dog class and the Wolf class **implements Canine** meaning both classes **MUST** override and give method bodies, to **ALL** the method signatures in the **Canine interface**.
 
-What may not be obvious is that even though Wolf and Dog implement the method signatures differently, because both Wolf and Dog contain the same behaviors/methods declared in Canine, both Wolf and Dog can ALSO be treated as if they are **Canine** objects. Thus, interfaces allow programmers to treat objects that do completely different things similarily because they share the same behaviors/methods. What does this mean? Consider the main program below:
+What may not be obvious is that even though Wolf and Dog implement the method signatures differently, because both Wolf and Dog contain the same behaviors/methods declared in Canine, both Wolf and Dog can ALSO be treated as if they are **Canine** objects. Thus, interfaces allow programmers to treat objects that do completely different things similarly because they share the same behaviors/methods. What does this mean? Consider the main program below:
 
 ```java
 public class Main {
@@ -78,7 +78,7 @@ Dog makes sound BARK
 Wolf makes sound HOWL!!!
 ```
 
-...notice how both Wolf and Dog are assigned to a Canine array! Notice how we can loop over the array, treating both as **Canine** but when the c.getClass() method is called, the specific class type for Wolf or Dog is returned, and when c.sound() is called, the specific sound for Wolf or Dog is returned? This is the power Interfaces give us, and the technique is often refered to as polymorphism.
+...notice how both Wolf and Dog are assigned to a Canine array! Notice how we can loop over the array, treating both as **Canine** but when the c.getClass() method is called, the specific class type for Wolf or Dog is returned, and when c.sound() is called, the specific sound for Wolf or Dog is returned? This is the power Interfaces give us, and the technique is often referred to as polymorphism.
 
 **You will be doing something similar in this lab!**
 
@@ -90,6 +90,8 @@ Wolf makes sound HOWL!!!
 ## Part 2 - Create 3 Classes that **Implement** Display.java
 
 ![Program Design](images/uml_model.png)
+
+* UML is Unified Modeling Language and UML diagrams should directly translate into Java Class structures.
 
 * Using the UML model and the following descriptions, make 3 different display classes.
     * Create a class **CurrentConditions.java** that **implements** Display.
