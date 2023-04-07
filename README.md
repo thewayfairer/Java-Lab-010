@@ -2,7 +2,7 @@
 
 ## INTRODUCTION!!!
 
-First, let me define a new **TYPE** you have not yet seen in Java, the **interface**
+First, let me define a new **TYPE** you have not yet seen in Java, the **interface**.
 
 An **interface** in the Java programming language is an **abstract type** (meaning it has methods, but NO method implementations) that is used to declare a behavior (i.e. methods, which are verbs/actions) that classes **MUST implement**. They are similar to protocols. **Interfaces** are declared using the **interface keyword**, and only contain **method signatures** and **constant declarations**. To use an interface, a concrete class must first declare that it plans on **implementing** the interface, and then ACTUALLY implement the body of all the methods in the Interface.
 
