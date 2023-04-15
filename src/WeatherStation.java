@@ -15,6 +15,7 @@ public class WeatherStation {
     private float temperature;
     private float humidity;
     private float pressure;
+    private String apiKey = "119726120bcc0ce693c02122614cd158";
 
     public WeatherStation() {
         displays = new ArrayList<Display>();
